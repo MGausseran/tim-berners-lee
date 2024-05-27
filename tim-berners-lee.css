@@ -1,5 +1,20 @@
 body {
-    
+    font-family: Georgia
+}
+h2 {
+    font-family: "Lato"
+}
+a {
+text-decoration: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+#it {
+    font-style: italic;
+    font-weight: 100
 }
 
 header {
@@ -20,20 +35,100 @@ header .left li {
     justify-content: center;
     align-items: center;
     margin-right: 25px
-    
 }
 
 header .right {
     display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 30px;
     align-items: center;
+}
+header .right p {
+    margin-right: 25px
 }
 
 .fa-solid fa-grip-lines {
     color: white;
-    
+
 }
 
 .container {
+    display: fle;
+    border: solid 2px lightgrey;
+    padding: 10px
+}
+
+nav {
     display: flex;
+}
+
+nav i {
+    align-content: center;
+    margin: 0 10px;
+}
+
+.interact {
+    display: flex;
+
+}
+
+.interact ul {
+    align-items: flex-start;
+}
+
+.interact li {
+    display: flex;
+}
+
+.signature {
+    display: flex;
+}
+
+.signature p {
+    margin-right: 10px
+}
+
+.bio { 
+    font-family: Georgia;
+    width: 960px;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-start: auto ;
+    grid-template-areas: 
+        "1stcolumn 2nd column";
+}
+
+.titles{
+    font-family: "Lato";
+    font-size: 12px;
+    font-style: italic;
+    margin: auto;
+}
+.signature{
+    font-family: "Lato";
+    font-size: 14px;
+    margin: auto;
+}
+
+.first_column {
+    width: 460px;
+}
+
+.second_column img {
+    height: auto;
+    width: 15svh;
+}
+.second_column hr {
+    width: 240px;
+}
+.second_column {
+    font-family: "Lato";
+    font-size: 14px;
+    width: 300px;
+    border: solid 2px lightgrey;
+}
+.second_column_center{
+    text-align: center;
+    font-weight: bold
 }
