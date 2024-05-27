@@ -1,0 +1,39 @@
+body {
+    
+}
+
+header {
+    background-color: #071C2E;
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+
+header .left ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .left li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px
+    
+}
+
+header .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fa-solid fa-grip-lines {
+    color: white;
+    
+}
+
+.container {
+    display: flex;
+}
