@@ -83,9 +83,10 @@ header .right p {
     border: solid 1px lightgrey;
     padding: 10px;
     width: 725px;
-    height: auto;
+    height: 100%;
     background-color: #fff;
     padding-top: 0px;
+    padding-bottom: 50px
 }
 
 nav {
@@ -204,7 +205,7 @@ nav i {
     font-family: "Lato";
     font-size: 14px;
     width: 300px;
-    height: 85%;
+    height: 100%;
     margin-top: 10px;
     border: solid 2px lightgrey;
     padding: 10px 0;
@@ -219,7 +220,7 @@ nav i {
 
 .second_column_width {
     width: 180px;
-    margin-left: 20px; 
+    margin-left: 20px;
     margin-bottom: 50px;
 }
 
@@ -254,16 +255,17 @@ nav i {
 .h3_hidden_desktop_bio {
     display: none;
 }
+
 .second_column_width_category {
     display: none;
 }
 
 @media only screen and (max-width: 768px) {
-    
+
     .header {
         position: fixed;
     }
-    
+
     .btn_login_desk {
         display: none;
     }
@@ -309,10 +311,10 @@ nav i {
         justify-content: center;
         align-items: center;
     }
-    
+
     header .left ul {
         flex-direction: row;
-        align-items: center; 
+        align-items: center;
     }
 
     header .right {
@@ -321,8 +323,8 @@ nav i {
     }
 
     nav {
-        flex-direction:row;
-        align-items: center; 
+        flex-direction: row;
+        align-items: center;
     }
 
     header a {
@@ -332,7 +334,7 @@ nav i {
     .btn_actions {
         display: flex;
     }
-    
+
     nav a {
         color: gray;
     }
@@ -494,11 +496,13 @@ nav i {
 
     .second_column_width {
         display: inline-block;
-        margin-left: 20px
+        margin-left: 20px;
+        margin-bottom: 30px;
     }
 
     .infos {
-        margin-right: 5%
+        margin-right: 5%;
+        margin-bottom: 20px;
     }
 
     .second_column img {
@@ -547,9 +551,14 @@ nav i {
         align-items: center;
 
     }
+
     .second_column_width_category {
         display: flex;
         margin-top: 10px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
     }
 
 }
@@ -610,7 +619,7 @@ nav i {
         flex-direction: flex;
         align-items: flex-start;
     }
-    
+
     nav i {
         margin-top: 25px
     }
