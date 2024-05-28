@@ -541,13 +541,10 @@ nav i {
         background-color: #FED7AA;
         border: solid 1px #FED7AA;
         border-radius: 15%;
-        margin-bottom: 5px;
         width: 200px;
         padding: 3px;
         margin-left: 5px;
-        justify-content: center;
         align-content: center;
-        justify-items: center;
         align-items: center;
 
     }
@@ -557,8 +554,6 @@ nav i {
         margin-top: 10px;
         align-content: center;
         align-items: center;
-        justify-content: center;
-        justify-items: center;
     }
 
 }
