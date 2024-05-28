@@ -535,13 +535,24 @@ nav i {
     .hidden {
         display: none;
     }
+    
+    .h3_hidden_desktop {
+        display: flex;
+        background-color: #FED7AA;
+        border: solid 1px #FED7AA;
+        border-radius: 10px;
+        padding: 3px 0;
+        width: 155px;
+        margin-bottom: 0px;
+        justify-content: center
+    }
 
     .h3_hidden_desktop_bio {
         display: flex;
         background-color: #FED7AA;
         border: solid 1px #FED7AA;
         border-radius: 15%;
-        width: 200px;
+        width: 100px;
         padding: 3px;
         margin-left: 5px;
         align-content: center;
