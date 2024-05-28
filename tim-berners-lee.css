@@ -232,7 +232,51 @@ nav i {
     display: none;
 }
 
+.btn_actions p {
+    display: none
+}
+
 @media only screen and (max-width: 768px) {
+    
+    header li {
+        display: none;
+    }
+
+    .btn_actions {
+        display: flex;
+    }
+
+    .btn_actions p {
+        display: flex;
+        margin: auto;
+        margin-right: 0;
+        border: solid 1px white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.01);
+        padding: 10px;
+        color: #2B5DBD;
+        font-weight: bold;
+        font-family: "Lato";
+        align-items: center;
+    }
+    
+    .btn_actions i {
+        margin-right: 10px
+        
+    }
+
+    .photo_box {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.01);
+        border: solid 0 white;
+        border-radius: 15px;
+        align-content: center;
+        width: 75%
+    }
+
+    .photo_box img {
+        align-content: stretch;
+    }
+
 
     .table_of_contents {
         display: flex;
@@ -252,17 +296,18 @@ nav i {
         align-items: center;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.01);
     }
-    
+
     .audio i {
         margin-right: 10px;
         margin-left: 5px
     }
+
     .audio h3 {
         margin-right: 10px;
         font-family: "Lato";
         font-weight: 500
     }
-    
+
     .audio p {
         font-family: "Lato";
         color: darkgrey;
@@ -318,22 +363,49 @@ nav i {
     }
 
     .bio {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        border: solid 1px lightgrey;
         margin-top: 20px;
-        padding: 0px 10p
+        padding: 0px 10p;
+    }
+
+    .bio .first_column {
+        order: 2;
+    }
+
+    .bio .second_column {
+        order: 1;
+    }
+
+    .h3_hidden_desktop_bio {
+        background-color: #FED7AA;
+        border: solid 1px #FED7AA;
+        border-radius: 15%;
+        margin-bottom: 5px;
+        width: 150px;
+        padding: 3px;
+        justify-content: center;
     }
 
     .first_column,
     .second_column {
-        width: 100%;
+        width: 90%;
         margin-bottom: 20px;
     }
 
+    .first_column p {
+        font-size: 22px;
+    }
+
     .second_column {
-        display: flex;
+        display: block;
         align-items: center;
+    }
+
+    .second_column_width {
+        display: inline-block;
+        margin-left: 20px
     }
 
     .infos {
@@ -341,7 +413,8 @@ nav i {
     }
 
     .second_column img {
-        width: 75%
+        width: 75%;
+
     }
 
     header {
@@ -385,6 +458,14 @@ nav i {
 
 
 @media only screen and (max-width: 480px) {
+    .bio .first_column {
+        order: 2;
+    }
+
+    .bio .second_column {
+        order: 1;
+    }
+
     h1 {
         font-size: 24px;
     }
@@ -429,6 +510,7 @@ nav i {
     .second_column {
         width: 100%;
     }
+
 
     header .left ul {
         flex-direction: column;
