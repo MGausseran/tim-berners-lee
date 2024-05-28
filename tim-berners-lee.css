@@ -40,6 +40,11 @@ header {
     padding: 10px;
 }
 
+header a {
+    color: white;
+    text-decoration: none;
+}
+
 header img {
     width: 150px;
     height: 100%;
@@ -80,6 +85,7 @@ header .right p {
     width: 725px;
     height: auto;
     background-color: #fff;
+    padding-top: 0px;
 }
 
 nav {
@@ -100,6 +106,8 @@ nav i {
     display: flex;
     color: #14599D;
     margin: auto;
+    padding-left: 0px;
+    margin-bottom: 10px;
 }
 
 .interact i {
@@ -120,17 +128,18 @@ nav i {
 
 .signature {
     display: flex;
-    width: auto
+    width: auto;
 }
 
 .signature p {
-    margin-right: 10px
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .bio {
     font-family: Georgia;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 110%;
     height: px;
     font-size: 18px;
@@ -183,7 +192,7 @@ nav i {
 
 .second_column img {
     height: auto;
-    width: 100%;
+    width: 75%;
 }
 
 .second_column hr {
@@ -196,7 +205,7 @@ nav i {
     font-size: 14px;
     width: 300px;
     height: auto;
-    ;
+    margin-top: 10px;
     border: solid 2px lightgrey;
     padding: 10px 0
 }
@@ -236,14 +245,91 @@ nav i {
     display: none
 }
 
+.btn_login_resp {
+    display: none;
+}
+
+.h3_hidden_desktop_bio {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     
-    header li {
+    .header {
+        position: fixed;
+    }
+    
+    .btn_login_desk {
+        display: none;
+    }
+
+    .btn_login_resp {
+        display: flex;
+        order: 3
+    }
+
+    .right .btn {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left i {
+        order: 1
+    }
+
+    .left img {
+        order: 2
+    }
+
+    .right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .left {
+        order: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header.right {
+        order: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .left ul {
+        flex-direction: row;
+        align-items: center; 
+    }
+
+    header .right {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction:row;
+        align-items: center; 
+    }
+
+    header a {
         display: none;
     }
 
     .btn_actions {
         display: flex;
+    }
+    
+    nav a {
+        color: gray;
     }
 
     .btn_actions p {
@@ -259,10 +345,9 @@ nav i {
         font-family: "Lato";
         align-items: center;
     }
-    
+
     .btn_actions i {
         margin-right: 10px
-        
     }
 
     .photo_box {
@@ -481,20 +566,6 @@ nav i {
         text-align: center;
     }
 
-    .btn_interact {
-        padding-right: 0px
-    }
-
-    .interact {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .interact li {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
     .second_column img {
         width: 100%;
     }
@@ -513,17 +584,21 @@ nav i {
 
 
     header .left ul {
-        flex-direction: column;
+        flex-direction: flex;
         align-items: flex-start;
     }
 
     header .right {
-        flex-direction: column;
+        flex-direction: flex;
         align-items: flex-start;
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: flex;
         align-items: flex-start;
+    }
+    
+    nav i {
+        margin-top: 25px
     }
 }
