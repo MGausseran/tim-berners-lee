@@ -204,10 +204,11 @@ nav i {
     font-family: "Lato";
     font-size: 14px;
     width: 300px;
-    height: auto;
+    height: 85%;
     margin-top: 10px;
     border: solid 2px lightgrey;
-    padding: 10px 0
+    padding: 10px 0;
+    align-content: center
 }
 
 .second_column_center {
@@ -219,6 +220,7 @@ nav i {
 .second_column_width {
     width: 180px;
     margin-left: 20px; 
+    margin-bottom: 50px;
 }
 
 .h3_hidden_desktop {
@@ -250,6 +252,9 @@ nav i {
 }
 
 .h3_hidden_desktop_bio {
+    display: none;
+}
+.second_column_width_category {
     display: none;
 }
 
@@ -465,12 +470,10 @@ nav i {
     }
 
     .h3_hidden_desktop_bio {
-        background-color: #FED7AA;
+        display: inline-block;
         border: solid 1px #FED7AA;
         border-radius: 15%;
-        margin-bottom: 5px;
-        width: 150px;
-        padding: 3px;
+        width: 300px;
         justify-content: center;
     }
 
@@ -529,17 +532,26 @@ nav i {
         display: none;
     }
 
-    .h3_hidden_desktop {
+    .h3_hidden_desktop_bio {
         display: flex;
         background-color: #FED7AA;
         border: solid 1px #FED7AA;
         border-radius: 15%;
         margin-bottom: 5px;
-        width: 150px;
+        width: 200px;
         padding: 3px;
+        margin-left: 5px;
         justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
 
     }
+    .second_column_width_category {
+        display: flex;
+        margin-top: 10px;
+    }
+
 }
 
 
