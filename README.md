@@ -24,3 +24,12 @@ Je n'ose plus cligner des yeux parce que des flexboxs m'attaquent lorsque je fer
 Je reste motivé.
 
 ![A l'aide](https://hips.hearstapps.com/hmg-prod/images/hulk-side-profile-performing-seated-row-646e2f1b22f93.jpg)
+
+### Entrée n°3
+
+Il est 08h15,
+J'ai dormi, mangé, et presque terminé la mise en page du site.
+Plus qu'à faire la version responsive.
+Je suis toujours motivé.
+
+![ça va le faire](https://i.ebayimg.com/images/g/~CQAAOSwxvNjL8Ia/s-l1200.webp)
